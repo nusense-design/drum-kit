@@ -14,8 +14,8 @@ function playSound(e) {
     key.classList.add("playing");
     
     // setTimeout(function () {
-        //     key.classList.remove('playing')
-        // },70)
+    //     key.classList.remove('playing')
+    // },70)       //--> this is not very effective 
     }
     
     function removeTrans(e) {
@@ -28,5 +28,5 @@ function playSound(e) {
     keys.forEach((key) => {
         key.addEventListener("transitionend", removeTrans);
     });
-    
     window.addEventListener("keydown", playSound);
+    
